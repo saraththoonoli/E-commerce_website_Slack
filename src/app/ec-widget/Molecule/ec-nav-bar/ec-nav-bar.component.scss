@@ -1,0 +1,52 @@
+@import '../../../../assets/ec-variables/colour.scss';
+@import '../../../../assets/ec-variables/mixins.scss';
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,28,28,1) 36%, rgba(185,138,138,1) 76%, rgba(255,255,255,1) 100%);    align-items: center;
+    justify-content: center;
+}
+  
+  .brand-logo {
+    width: 150px;
+  }
+  .nav-b{
+    height: 30px;
+    background: linear-gradient(90deg, rgba(239,231,231,1) 0%, rgba(239,231,231,1) 36%, rgba(239,231,231,1) 82%, rgba(255,255,255,1) 96%);    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    a{
+      text-decoration: none;
+      color: $colourBlack;
+      font-weight: 2px;
+      opacity: 50%;
+      font-weight: 600;
+      font-family: 'Poiret One', sans-serif;
+
+    }
+    :hover{
+      color: $colourBlack;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-items {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  
+    .nav-items a {
+      margin: 5px;
+    }
+  }
+
+  
+  
+  

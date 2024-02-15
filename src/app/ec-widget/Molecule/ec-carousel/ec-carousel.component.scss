@@ -1,0 +1,13 @@
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 767px) {
+    .carousel-item img {
+      max-height: 300px; 
+    }
+  }
+  

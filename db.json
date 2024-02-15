@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "username": "swdwd",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "phoneNumber": "2031456984",
+      "address": "wdwdwdwddwddw",
+      "id": 1
+    },
+    {
+      "username": "wswwsws",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "phoneNumber": "12345",
+      "address": "edewefeffefff",
+      "id": 2
+    },
+    {
+      "username": "sarath",
+      "password": "sarath",
+      "confirmPassword": "sarath",
+      "phoneNumber": "9605474221",
+      "address": "sarath,kannur",
+      "id": 3
+    },
+    {
+      "username": "shamal",
+      "password": "shamal",
+      "confirmPassword": "shamal",
+      "phoneNumber": "8795632489",
+      "address": "Kannur,kerala",
+      "id": 4
+    },
+    {
+      "username": "jinas",
+      "password": "jinas",
+      "confirmPassword": "jinas",
+      "phoneNumber": "8563214589",
+      "address": "jvgfdsfsdfgfhgjfy",
+      "id": 5
+    },
+    {
+      "username": "sumesh",
+      "password": "sumesh",
+      "confirmPassword": "sumesh",
+      "phoneNumber": "9654896321",
+      "address": "wbhdwhjdwhhjhdbwdd",
+      "id": 6
+    },
+    {
+      "username": "mili",
+      "password": "mili",
+      "confirmPassword": "mili",
+      "phoneNumber": "8523654725",
+      "address": "kannur,kerala",
+      "id": 7
+    },
+    {
+      "username": "kurup",
+      "password": "kurup",
+      "confirmPassword": "kurup",
+      "phoneNumber": "9632145669",
+      "address": "jwdnwjdjwd",
+      "id": 8
+    }
+  ],
+  "login": [
+    {}
+  ]
+}

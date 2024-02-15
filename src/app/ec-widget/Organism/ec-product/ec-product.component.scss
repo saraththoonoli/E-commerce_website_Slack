@@ -1,0 +1,97 @@
+@import '../../../../assets/ec-variables/colour.scss';
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: $colourWhite;
+}
+
+.product-image {
+  width: 90%;
+  border-radius: 5px;
+  height: 250px;
+
+
+}
+
+.product-details {
+  flex-grow: 1;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  height: 105px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  align-self: flex-end;
+  background-color: transparent;
+  color: $colourWhite;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.full-width-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(89, 243, 255, 1) 0%, rgba(131, 241, 247, 1) 26%, rgba(155, 247, 247, 1) 58%, rgba(255, 255, 255, 1) 100%);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Courgette', cursive;
+
+}
+
+.full-width-button:hover {
+  background-color: $colourBlueHover;
+}
+
+#search {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    position: relative;
+    margin-top: 0;
+  }
+}

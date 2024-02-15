@@ -1,0 +1,51 @@
+<div class="container pt-5 pb-5">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title"> Edit Profile</h5>
+    </div>
+    <div class="card-body">
+      <form (submit)="saveChanges()">
+        <table>
+          <tbody>
+            <tr>
+              <th scope="row">Username:</th>
+              <td>
+                <input
+                  type="text"
+                  [(ngModel)]="editedUserDetails.username"
+                  name="username"
+                  class="form-control"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Phone:</th>
+              <td>
+                <input
+                  type="text"
+                  [(ngModel)]="editedUserDetails.phoneNumber"
+                  name="phoneNumber"
+                  class="form-control"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Address:</th>
+              <td>
+                <input
+                  type="text"
+                  [(ngModel)]="editedUserDetails.address"
+                  name="address"
+                  class="form-control"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" class="btn  mt-3"><i class="fa-solid fa-circle-check fa-2xl" style="color: #005eff;"></i></button>
+      </form>
+    </div>
+  </div>
+  <button class="btn btn-warning mt-2" (click)="logout()"><i class="fa-solid fa-power-off"></i> logout</button>
+</div>
+<app-ec-cart></app-ec-cart>

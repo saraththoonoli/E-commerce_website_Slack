@@ -1,0 +1,59 @@
+<div class="container mt-5 pt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form class="login-form">
+        <div class="mb-3">
+          <app-ec-input-box
+            [type]="'text'"
+            [name]="'username'"
+            [placeholder]="'Username'"
+            [control]="usernameControl"
+          >
+          </app-ec-input-box>
+          <!-- Display error message if username is invalid -->
+          <small
+            *ngIf="usernameControl.invalid && usernameControl.touched"
+            class="text-danger"
+          >
+            Username is required
+          </small>
+        </div>
+        <div class="mb-3">
+          <app-ec-input-box
+            [type]="'password'"
+            [name]="'password'"
+            [placeholder]="'Password'"
+            [control]="passwordControl"
+          >
+          </app-ec-input-box>
+          <!-- Display error message if password is invalid -->
+          <small
+            *ngIf="passwordControl.invalid && passwordControl.touched"
+            class="text-danger"
+          >
+            Password is required
+          </small>
+        </div>
+        <div class="mb-3">
+          <app-ec-button
+            label="Login"
+            btnClass="btn btn-primary btn-block"
+            (click)="login()"
+          >
+          </app-ec-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="ms-5 text-center pt-3 pb-5">
+  <h6 class="pe-5 pt-2">
+    Join our family
+    <span
+      ><a style="text-decoration: none" href="register"
+        >Click to register</a
+      ></span
+    >
+  </h6>
+</div>

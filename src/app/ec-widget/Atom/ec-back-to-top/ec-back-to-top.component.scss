@@ -1,0 +1,15 @@
+.full-width-button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(89,243,255,1) 0%, rgba(131,241,247,1) 26%, rgba(155,247,247,1) 58%, rgba(255,255,255,1) 100%);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courgette', cursive;
+
+}
+
+.full-width-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,72 @@
+<div class="offcanvas-wrapper">
+  <!-- Offcanvas sidebar for product details -->
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="productOffcanvas"
+    aria-labelledby="productOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="productOffcanvasLabel">User Details</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <app-ec-profile></app-ec-profile>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#productOffcanvas"
+          aria-controls="productOffcanvas"
+        >
+          <span
+            ><i class="fa-solid fa-user-astronaut" style="color: #3700ff"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      </div>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="app-container">
+      <app-ec-product></app-ec-product>
+    </div>
+  </main>
+
+  <!-- Offcanvas sidebar for user details -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="userOffcanvas"
+    aria-labelledby="userOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="userOffcanvasLabel">User Details</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- User details content goes here -->
+      <p>Username: John Doe</p>
+      <p>Email: john@example.com</p>
+      <!-- Add more user details as needed -->
+    </div>
+  </div>
+</div>

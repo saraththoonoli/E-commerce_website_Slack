@@ -1,0 +1,144 @@
+<div class="container mt-5 pb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <app-ec-input-box
+              type="text"
+              name="username"
+              placeholder="Enter your username"
+              [control]="usernameControl"
+            ></app-ec-input-box>
+            <div
+              *ngIf="
+                usernameControl.invalid &&
+                (usernameControl.dirty || usernameControl.touched)
+              "
+              class="text-danger"
+            >
+              <div
+                *ngIf="
+                  usernameControl.errors && usernameControl.errors['required']
+                "
+              >
+                Username is required.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <app-ec-input-box
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              [control]="passwordControl"
+            ></app-ec-input-box>
+            <div
+              *ngIf="
+                passwordControl.invalid &&
+                (passwordControl.dirty || passwordControl.touched)
+              "
+              class="text-danger"
+            >
+              <div
+                *ngIf="
+                  passwordControl.errors && passwordControl.errors['required']
+                "
+              >
+                Password is required.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword" class="form-label"
+              >Confirm Password</label
+            >
+            <app-ec-input-box
+              type="password"
+              name="confirmPassword"
+              placeholder="Re-enter your password"
+              [control]="confirmPasswordControl"
+            ></app-ec-input-box>
+            <div
+              *ngIf="
+                confirmPasswordControl.invalid &&
+                (confirmPasswordControl.dirty || confirmPasswordControl.touched)
+              "
+              class="text-danger"
+            >
+              <div
+                *ngIf="
+                  confirmPasswordControl.errors &&
+                  confirmPasswordControl.errors['required']
+                "
+              >
+                Confirm Password is required.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <app-ec-input-box
+              type="tel"
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              [control]="phoneNumberControl"
+            ></app-ec-input-box>
+            <div
+              *ngIf="
+                phoneNumberControl.invalid &&
+                (phoneNumberControl.dirty || phoneNumberControl.touched)
+              "
+              class="text-danger"
+            >
+              <div
+                *ngIf="
+                  phoneNumberControl.errors &&
+                  phoneNumberControl.errors['required']
+                "
+              >
+                Phone Number is required.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address" class="form-label">Address</label>
+            <app-ec-input-box
+              type="text"
+              name="address"
+              placeholder="Enter your address"
+              [control]="addressControl"
+            ></app-ec-input-box>
+            <div
+              *ngIf="
+                addressControl.invalid &&
+                (addressControl.dirty || addressControl.touched)
+              "
+              class="text-danger"
+            >
+              <div
+                *ngIf="
+                  addressControl.errors && addressControl.errors['required']
+                "
+              >
+                Address is required.
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="form-group">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              (click)="register()"
+            >
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
